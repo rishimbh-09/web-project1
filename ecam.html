@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple eCommerce Site</title>
+    <style>
+        /* Existing styles... */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .site-title {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px; /* Increased gap between products */
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product button {
+            background-color: #232f3e;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.2s; /* Added transition for smooth effect */
+        }
+        .product button:hover {
+            background-color: #1a1a1a;
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+        #about-us {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #about-us h2 {
+            color: #232f3e;
+        }
+        #about-us p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .end {
+            text-align: right;
+            border-width: 2px;
+            border-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="site-title">
+        <h1>Simple eCommerce Site</h1>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <input type="text" id="search" placeholder="search">
+        <div class="end"><a href="login.html">Login</a></div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="product">
+        <img src="product3.webp" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>$1000.00</p>
+        <button>Shop Now</button>
+        <button>Add to Cart</button>
+        <button>Description</button>
+    </div>
+    <div class="product">
+        <img src="product4.jpeg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>$2000.00</p>
+        <button>Shop Now</button>
+        <button>Add to Cart</button>
+        <button>Description</button>
+    </div>
+    <div class="product">
+        <img src="product5.avif" alt="Product 3">
+        <h2>Product 3</h2>
+        <p>$3000.00</p>
+        <button>Shop Now</button>
+        <button>Add to Cart</button>
+        <button>Description</button>
+    </div>
+    <div class="product">
+        <img src="product6.avif" alt="Product 4">
+        <h2>Product 4</h2>
+        <p>$4000.00</p>
+        <button>Shop Now</button>
+        <button>Add to Cart</button>
+        <button>Description</button>
+    </div> 
+</div>
+
+<section id="about-us">
+    <h2>About Us</h2>
+    <p>
+        Welcome to our Simple eCommerce Site! We are dedicated to providing our customers with high-quality products at affordable prices. Our journey began with a passion for delivering exceptional value and service to our community. We believe that shopping should be a delightful experience, and we strive to make it easy and enjoyable for everyone.
+    </p>
+    <p>
+        Our carefully curated selection of products ranges from everyday essentials to unique finds, ensuring that there is something for everyone. We work closely with trusted suppliers to bring you the best products while maintaining a commitment to sustainability and ethical practices. 
+    </p>
+    <p>
+        Customer satisfaction is our top priority. Our friendly support team is always here to assist you with any questions or concerns. Thank you for choosing us as your shopping destination. We look forward to serving you!
+    </p>
+</section>
+
+</body>
+</html>
